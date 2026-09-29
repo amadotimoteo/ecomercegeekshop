@@ -266,3 +266,46 @@ main {
   border-top: 1px solid #eee;
   color: #888;
 }
+
+/* ==========================================================================
+   EFEITO DE ZOOM GLOBAL PARA TODAS AS IMAGENS
+   ========================================================================== */
+
+/* 1. Container de Zoom em qualquer seção (Portfólio, Demonstração e Loja) */
+.zoom-container,
+.demonstracao figure,
+.product-card figure {
+  position: relative; 
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: left; /* Ajuste para alinhar à esquerda */
+  border-radius: 20px;
+  cursor: zoom-in;
+  background-color: #f0f0f0;
+}
+
+/* Ajuste específico para os cards da loja para acompanharem o layout do card */
+.product-card figure {
+  max-width: 100%;
+  height: 220px;
+  border-radius: 10px 10px 0 0; /* Arredonda apenas os cantos superiores */
+}
+
+/* 2. Comportamento base da imagem */
+.zoom-container img,
+.demonstracao figure img,
+.product-card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+/* 3. Efeito do Zoom ao passar o mouse (:hover) */
+.zoom-container:hover img,
+.demonstracao figure:hover img,
+.product-card:hover figure img {
+  transform: scale(1.15);
+}
