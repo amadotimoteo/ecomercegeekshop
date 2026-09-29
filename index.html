@@ -3,203 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>"Ma&Fe" | Geek Shop</title>
-
-    <meta
-        name="description"
-        content="Hama Beads personalizados exclusivos feitas à mão, colecionaveis geek e muito mais."
-    >
-
-    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="Hama Beads personalizados exclusivos feitas à mão, colecionaveis geek e muito mais.">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <!-- Navegação principal -->
-         <nav aria-label="Navegação principal">
-
-        <a href="/" class="logo">
-            "Ma&Fe" | Geek Shop
-        </a>
-
-        <ul class="menu">
-
-            <li>
-                <a href="/">Início</a>
-            </li>
-
-            <li>
-                <a href="/portfolio/">
-                    Portfólio
-                </a>
-            </li>
-
-            <li>
-                <a href="/loja/">
-                    Loja
-                </a>
-            </li>
-
-            <li>
-                <a href="/encomendas/">
-                    Encomendas
-                </a>
-            </li>
-
-        </ul>
-
-        <div class="acoes">
-
-            <a href="/busca/" aria-label="Pesquisar">
-                Busca
-            </a>
-
-            <a href="/conta/" aria-label="Minha conta">
-                Minha conta
-            </a>
-
-            <a href="/carrinho/" aria-label="Carrinho">
-                Carrinho
-            </a>
-
-        </div>
-
-    </nav>
+    <header class="site-header">
+        <nav aria-label="Navegação principal" class="main-nav">
+            <a href="/" class="logo">"Ma&Fe" | Geek Shop</a>
+            <ul class="menu">
+                <li><a href="/">Início</a></li>
+                <li><a href="/portfolio/">Portfólio</a></li>
+                <li><a href="/loja/">Loja</a></li>
+                <li><a href="/encomendas/">Encomendas</a></li>
+            </ul>
+            <div class="acoes">
+                <a href="/busca/" aria-label="Pesquisar">Busca</a>
+                <a href="/conta/" aria-label="Minha conta">Minha conta</a>
+                <a href="/carrinho/" aria-label="Carrinho">Carrinho</a>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <!-- Conteúdo específico da página -->
-         <section class="cta-encomenda">
+        <!-- Secção CTA Encomenda -->
+        <section class="cta-encomenda">
+            <h2>Tem uma ideia?</h2>
+            <p>
+                Transforme sua ideia em uma peça exclusiva de Hama Beads!<br>
+                Estamos prontos para criar algo único e especial para você.
+            </p>
+            <a href="/encomendas/" class="btn">Faça sua encomenda</a>
+        </section>
 
-        <h2>
-            Tem uma ideia?
-        </h2>
-
-        <p>
-            Transforme sua ideia em uma peça exclusiva de Hama Beads!<br>Estamos prontos para criar algo único e especial para você.
-        </p>
-
-        <a href="/encomendas/">
-            Faça sua encomenda
-        </a>
+        <!-- Quem Somos -->
         <section class="cta-quem-somos">
             <h2>Quem Somos</h2>
             <p>
-                Somos uma equipe apaixonada por Hama Beads e cultura geek. Nosso objetivo é criar peças personalizadas que tragam alegria e nostalgia para nossos clientes.<br>Produções artesanais, feitas com muito carinho.<br>Perfeito para presentear ou decorar seu cantinho geek!
-        </section>
-    </section>
-
-    <nav aria-label="Paginação">
-
-        <a href="?pagina=1">1</a>
-        <a href="?pagina=2">2</a>
-        <a href="?pagina=3">3</a>
-        <a href="?pagina=4">4</a>
-
-        <a href="?pagina=2">
-            Próxima
-        </a>
-
-    </nav>
-
-    <article class="portfolio-detail">
-
-        <header>
-
-            <p>
-                Encomenda #04
+                Somos uma equipe apaixonada por Hama Beads e cultura geek. Nosso objetivo é criar peças personalizadas que tragam alegria e nostalgia para nossos clientes.<br>
+                Produções artesanais, feitas com muito carinho.<br>
+                Perfeito para presentear ou decorar seu cantinho geek!
             </p>
-
-            <h1>
-                Personagem 
-            </h1>
-            <p>Kratos - God Of War Ragnarok</p>
-
-            <h2>Categoria</h2>
-            <p>Hama Beads</p>
-
-        </header>
-
-
-        <section class="project-gallery">
-            <figure class="zoom-container" id="zoomContainer">
-            <img src="../assets/portifolio/img1.jpeg" alt="Vista principal da peça" id="zoomImage">
-            </figure>
         </section>
 
+        <!-- Paginação -->
+        <nav aria-label="Paginação" class="paginacao">
+            <a href="?pagina=1">1</a>
+            <a href="?pagina=2">2</a>
+            <a href="?pagina=3">3</a>
+            <a href="?pagina=4">4</a>
+            <a href="?pagina=2">Próxima</a>
+        </nav>
 
-        <section class="project-info">
+        <!-- Detalhes do Portfólio -->
+        <article class="portfolio-detail">
+            <header>
+                <p class="tag">Encomenda #04</p>
+                <h1>Personagem</h1>
+                <p class="subtitle">Kratos - God Of War Ragnarok</p>
+                <h2>Categoria</h2>
+                <p>Hama Beads</p>
+            </header>
 
-            <dl>
+            <section class="project-gallery">
+                <figure class="zoom-container" id="zoomContainer">
+                    <img src="../assets/portifolio/img1.jpeg" alt="Vista principal da peça" id="zoomImage">
+                </figure>
+            </section>
 
-                <dt>Cliente</dt>
-                <dd>João</dd>
+            <section class="project-info">
+                <dl>
+                    <dt>Cliente</dt>
+                    <dd>João</dd>
+                    <dt>Categoria</dt>
+                    <dd>Hama Beads</dd>
+                    <dt>Data</dt>
+                    <dd>Agosto de 2026</dd>
+                </dl>
+            </section>
 
-                <dt>Categoria</dt>
-                <dd>Hama Beads</dd>
+            <section class="feedback">
+                <h2>Feedback do cliente</h2>
+                <blockquote>"Ficou exatamente como eu imaginava."</blockquote>
+                <p class="stars">★★★★★</p>
+            </section>
 
-                <dt>Data</dt>
-                <dd>Agosto de 2026</dd>
+            <section class="demonstracao">
+                <h2>Demonstração</h2>
+                <figure>
+                    <img src="assets/detalhes/img1.jpg" alt="Demonstração da peça">
+                </figure>
+            </section>
 
-            </dl>
+            <footer>
+                <h2>Gostou desse trabalho?</h2>
+                <a href="/encomende/" class="btn">Quero encomendar também!</a>
+            </footer>
+        </article>
 
+        <!-- Secção da Loja -->
+        <section class="loja-section">
+            <header class="page-header">
+                <h1>Loja</h1>
+                <p>Produtos artesanais e colecionáveis geek.</p>
+            </header>
+
+            <section class="shop-controls">
+                <nav aria-label="Categorias" class="category-nav">
+                    <a href="/loja/">Todos</a>
+                    <a href="?categoria=hama-beads">Hama Beads</a>
+                    <a href="?categoria=chaveiros">Chaveiros</a>
+                    <a href="?categoria=imas">Ímãs de geladeira</a>
+                    <a href="?categoria=marcadores">Marcadores</a>
+                    <a href="?categoria=porta-copos">Porta-copos</a>
+                    <a href="?categoria=quadros">Quadros</a>
+                </nav>
+
+                <select name="ordenacao" aria-label="Ordenar produtos">
+                    <option value="recentes">Mais recentes</option>
+                    <option value="menor-preco">Menor preço</option>
+                    <option value="maior-preco">Maior preço</option>
+                </select>
+            </section>
+
+            <section class="product-grid">
+                <article class="product-card">
+                    <a href="/loja/produto.html">
+                        <figure>
+                            <img src="assets/images/img3.jpg" alt="Hama Beads personagem Super Mario World">
+                        </figure>
+                        <div class="product-info">
+                            <p class="category">Hama Beads</p>
+                            <h2>Personagem X</h2>
+                            <data value="39.90">R$ 39,90</data>
+                        </div>
+                    </a>
+                </article>
+            </section>
         </section>
 
+        <!-- Formulário de Encomenda -->
+        <section class="form-section">
+            <header class="page-header">
+                <p class="subtitle">Encomendas personalizadas</p>
+                <h1>Transforme sua ideia em uma peça.</h1>
+                <p>Conte o que você imaginou e vamos transformar sua ideia em uma peça artesanal.</p>
+            </header>
 
-        <section class="feedback">
+            <form action="/encomende" method="POST" enctype="multipart/form-data" class="custom-form">
+                <fieldset>
+                    <legend>01. Sobre o projeto</legend>
+                    <label for="descricao">Conte o que você deseja criar</label>
+                    <textarea id="descricao" name="descricao" required rows="4"></textarea>
+                </fieldset>
 
-            <h2>
-                Feedback do cliente
-            </h2>
+                <fieldset>
+                    <legend>02. Referência</legend>
+                    <label for="referencia">Envie uma imagem de referência</label>
+                    <input type="file" id="referencia" name="referencia" accept="image/*">
+                </fieldset>
 
-            <blockquote>
-                "Ficou exatamente como eu imaginava."
-            </blockquote>
+                <fieldset>
+                    <legend>03. Produto</legend>
+                    <label for="produto">Tipo de produto</label>
+                    <select id="produto" name="produto" required>
+                        <option value="">Selecione</option>
+                        <option value="hama-beads">Hama Beads</option>
+                        <option value="chaveiro">Chaveiro</option>
+                        <option value="ima">Ímã de geladeira</option>
+                        <option value="marcador">Marcador de página</option>
+                        <option value="porta-copos">Porta-copos</option>
+                        <option value="quadro">Quadro decorativo</option>
+                        <option value="enfeite">Enfeite de mesa</option>
+                    </select>
+                </fieldset>
 
-            <p>
-                ★★★★★
-            </p>
+                <fieldset>
+                    <legend>04. Quantidade</legend>
+                    <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+                </fieldset>
 
+                <fieldset>
+                    <legend>05. Seus dados</legend>
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" name="nome" required>
+
+                    <label for="whatsapp">WhatsApp</label>
+                    <input id="whatsapp" type="tel" name="whatsapp" required>
+
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" required>
+                </fieldset>
+
+                <button type="submit" class="btn btn-submit">Enviar solicitação</button>
+            </form>
         </section>
-
-
-        <section class="demonstracao">
-
-            <h2>
-                Demonstração
-            </h2>
-
-            <figure>
-
-                <img
-                    src="/assets/gifs/"
-                    alt="Demonstração da peça"
-                >
-
-            </figure>
-
-        </section>
-
-
-        <footer>
-
-            <h2>
-                Gostou desse trabalho?
-            </h2>
-
-            <a href="/encomende/">
-                Quero encomendar algo parecido
-            </a>
-
-        </footer>
-
-    </article>
     </main>
 
-    <footer>
-        <!-- Rodapé -->
+    <footer class="site-footer">
+        <p>&copy; 2026 "Ma&Fe" Geek Shop. Todos os direitos reservados.</p>
     </footer>
 
     <script src="/js/main.js"></script>
