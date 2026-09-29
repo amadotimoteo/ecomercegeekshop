@@ -1,0 +1,35 @@
+/* Container principal da galeria */
+.project-gallery {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Container do Zoom (figure) */
+.zoom-container {
+  position: relative;
+  width: 100%; /* Largura total do container */
+  max-width: 300px; /* Largura máxima desejada para o container */
+  height: 300px;    /* Altura fixa para manter o padrão visual */
+  overflow: hidden; /* Oculta o que passar das bordas no efeito zoom */
+  margin: 0;
+  border-radius: 50px; /* Bordas arredondadas */
+  cursor: zoom-in;
+}
+
+/* Imagem */
+.zoom-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preencha o container sem distorcer */
+  display: block;
+  transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+}
+
+/* Efeito de Zoom ao passar o mouse */
+.zoom-container:hover img {
+  transform: scale(1.2); /* Aumenta a imagem em 20% */
+}
